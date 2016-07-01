@@ -40,8 +40,6 @@ class Resultpage(BaseHandler):
         word2 = self.request.get('word2')
         if word1 is None or word2 is None:
             self.redirect('/')
-        len1=len(word1)
-        len2=len(word2)
         for(a,b)in zip(word1,word2):
             self.response.out.write(a)
             self.response.out.write(b)
