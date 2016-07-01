@@ -43,21 +43,8 @@ class Resultpage(BaseHandler):
         len1=len(word1)
         len2=len(word2)
         for(a,b)in zip(word1,word2):
-    #    if i<len1
             self.response.out.write(a)
             self.response.out.write(b)
-    #        if j<len2
-    #            self.response.out.write(word2[0])
-    #            j+=1
-    #            i+=1
-    #        if j<len2
-    #            j+=1
-    #
-    #    if(len(combine1)>len(combine2)):
-    #        combine=combine1
-    #    else:
-    #        combine=combine2
-    #    self.response.out.write(combine)
 
 
 app = webapp2.WSGIApplication([
